@@ -1,0 +1,13 @@
+body {
+    overflow: hidden;
+    background: #181127;
+}
+
+
+.g-con {
+    z-index: 1;
+
+    overflow: hidden;
+
+    @include v-h-center(990px, 580px);
+}

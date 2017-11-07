@@ -1,0 +1,12 @@
+{
+    "version": "1.0.0",
+    "author": "dxl",
+    "config": {
+        "href": "http://vip.tcy365.org:1505",
+        "host": "vip.tcy365.org",
+        "port": 8000,
+        "serverPort": 8000,
+        "debug": true
+    },
+    "dataList": []
+}

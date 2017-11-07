@@ -1,0 +1,21 @@
+@mixin  v-center($width, $height) {
+    position: absolute;
+    top: 50%;
+
+    margin-top: - $height / 2;
+    
+    width: $width;
+    height: $height;
+}
+
+@mixin  v-h-center($width, $height) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    margin-top: - $height / 2;
+    margin-left: - $width / 2;
+
+    width: $width;
+    height: $height;
+}

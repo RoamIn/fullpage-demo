@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="renderer" content="webkit"/>
+    <title>全屏滚动 Demo</title>
+    <meta name="Keywords" content="">
+    <meta name="description" content=""/>
+    <!--build:css assets/css/main.min.css -->
+    <link href="assets/css/base.css" rel="stylesheet" type="text/css">
+    <link href="assets/css/main.css" rel="stylesheet" type="text/css">
+    <!-- endbuild -->
+</head>
+
+<body class="yahei">
+<!--<div id="YDSiteNav" class="YDSiteNav"></div>-->
+
+<div id="J_FullPage" class="g-bd">
+    <div class="page page-0">
+        <div class="keyart" id="parallax">
+            <div class="keyart_layer parallax" id="keyart-0" data-xrange="2" data-yrange="2"></div>
+            <div class="keyart_layer parallax" id="keyart-1" data-xrange="5" data-yrange="5"></div>
+            <div class="keyart_layer parallax" id="keyart-2" data-xrange="11" data-yrange="11"></div>
+            <div class="keyart_layer parallax" id="keyart-3" data-xrange="16" data-yrange="16"></div>
+            <div class="keyart_layer parallax" id="keyart-4" data-xrange="26" data-yrange="26"></div>
+            <div class="keyart_layer parallax" id="keyart-5" data-xrange="36" data-yrange="36"></div>
+            <div class="keyart_layer parallax" id="keyart-6" data-xrange="49" data-yrange="49"></div>
+            <div class="keyart_layer" id="keyart-scrim"></div>
+            <div class="keyart_layer parallax" id="keyart-7" data-xrange="69" data-yrange="69"></div>
+            <div class="keyart_layer" id="keyart-8" data-xrange="100" data-yrange="100"></div>
+        </div>
+    </div>
+
+    <div class="page page-1">
+        <div class="g-con">
+
+        </div>
+    </div>
+
+    <div class="page page-2">
+        <div class="g-con">
+        </div>
+    </div>
+
+    <div class="page page-3">
+        <div class="g-con">
+        </div>
+    </div>
+
+    <div class="page page-4">
+        <div class="g-con">
+        </div>
+    </div>
+</div>
+
+<div id="J_Navigation" class="m-navigation">
+    <div class="mascot"></div>
+    <ul class="page-anchor-list">
+        <li class="page-anchor page-anchor-1"><a href="#page-anchor-1">第壹页</a></li>
+        <li class="page-anchor page-anchor-2"><a href="#page-anchor-2">第贰页</a></li>
+        <li class="page-anchor page-anchor-3"><a href="#page-anchor-3">第肆页</a></li>
+        <li class="page-anchor page-anchor-4"><a href="#page-anchor-4">第伍页</a></li>
+    </ul>
+    <a class="back-to-top" href="#page-anchor-0"></a>
+</div>
+
+
+
+<!--[if gte IE 9]>
+<script src="assets/js/lib/plax.js"></script>
+<![endif]-->
+<!--[if !IE]><!-->
+<script src="assets/js/lib/plax.js"></script>
+<!--<![endif]-->
+
+<!--build:js assets/js/app.min.js -->
+<script src="assets/js/lib/jquery.hashchange.js"></script>
+<script src="assets/js/lib/jquery.fullpage.min.js"></script>
+<script src="assets/js/lib/jquery.sidebar.js"></script>
+<script src="assets/js/lib/sliderGradual.js"></script>
+<!-- endbuild -->
+
+<script>
+    seajs.config({
+        base:'./assets/js/app/',
+        'map': [
+            [ /^(.*\.(?:css|js))(.*)$/i, '$1?20171031' ]
+        ]
+    });
+
+    seajs.use('main.js');
+</script>
+</body>
+</html>
