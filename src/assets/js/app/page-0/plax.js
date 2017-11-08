@@ -7,7 +7,7 @@ define(function (require, exports, module) {
     function init() {
 
         if (typeof $.plax !== 'undefined') {
-            $('.parallax').plaxify();
+            $('.J_Plax').plaxify();
             $.plax.enable();
         }
     }

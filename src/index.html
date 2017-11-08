@@ -8,64 +8,67 @@
     <meta name="Keywords" content="">
     <meta name="description" content=""/>
     <!--build:css assets/css/main.min.css -->
-    <link href="assets/css/base.css" rel="stylesheet" type="text/css">
-    <link href="assets/css/main.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="assets/css/base.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.fullpage.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css">
     <!-- endbuild -->
 </head>
 
 <body class="yahei">
-<!--<div id="YDSiteNav" class="YDSiteNav"></div>-->
-
 <div id="J_FullPage" class="g-bd">
+    <!--第1屏-->
     <div class="page page-0">
-        <div class="keyart" id="parallax">
-            <div class="keyart_layer parallax" id="keyart-0" data-xrange="2" data-yrange="2"></div>
-            <div class="keyart_layer parallax" id="keyart-1" data-xrange="5" data-yrange="5"></div>
-            <div class="keyart_layer parallax" id="keyart-2" data-xrange="11" data-yrange="11"></div>
-            <div class="keyart_layer parallax" id="keyart-3" data-xrange="16" data-yrange="16"></div>
-            <div class="keyart_layer parallax" id="keyart-4" data-xrange="26" data-yrange="26"></div>
-            <div class="keyart_layer parallax" id="keyart-5" data-xrange="36" data-yrange="36"></div>
-            <div class="keyart_layer parallax" id="keyart-6" data-xrange="49" data-yrange="49"></div>
-            <div class="keyart_layer" id="keyart-scrim"></div>
-            <div class="keyart_layer parallax" id="keyart-7" data-xrange="69" data-yrange="69"></div>
-            <div class="keyart_layer" id="keyart-8" data-xrange="100" data-yrange="100"></div>
+        <div class="plax-layer-wrapper">
+            <div class="plax-layer plax-layer-top-scrim J_Plax" data-yrange="20" data-invert="true"></div>
+            <div class="plax-layer plax-layer-0 J_Plax" data-yrange="20" data-invert="true"></div>
+            <div class="plax-layer plax-layer-1 J_Plax" data-yrange="50" data-invert="true"></div>
+            <div class="plax-layer plax-layer-2 J_Plax" data-yrange="110" data-invert="true"></div>
+            <div class="plax-layer plax-layer-3 J_Plax" data-yrange="160" data-invert="true"></div>
+            <div class="plax-layer plax-layer-4 J_Plax" data-yrange="260" data-invert="true"></div>
+            <div class="plax-layer plax-layer-5 J_Plax" data-yrange="360" data-invert="true"></div>
+            <div class="plax-layer plax-layer-6 J_Plax" data-yrange="490" data-invert="true"></div>
+            <div class="plax-layer plax-layer-7 J_Plax" data-yrange="690" data-invert="true"></div>
+            <div class="plax-layer plax-layer-8 J_Plax" data-yrange="1000" data-invert="true"></div>
+            <div class="plax-layer plax-layer-bottom-scrim J_Plax" data-yrange="1000" data-invert="true"></div>
         </div>
     </div>
 
+    <!--第2屏-->
     <div class="page page-1">
-        <div class="g-con">
-
-        </div>
+        <div class="g-con">page 1 content area</div>
     </div>
 
+    <!--第3屏-->
     <div class="page page-2">
-        <div class="g-con">
-        </div>
+        <div class="g-con">page 2 content area</div>
     </div>
 
+    <!--第4屏-->
     <div class="page page-3">
-        <div class="g-con">
-        </div>
+        <div class="g-con">page 3 content area</div>
     </div>
 
     <div class="page page-4">
-        <div class="g-con">
-        </div>
+        <div class="g-con">page 4 content area</div>
     </div>
 </div>
 
+<!--侧边导航栏-->
 <div id="J_Navigation" class="m-navigation">
+    <!--吉祥物-->
     <div class="mascot"></div>
-    <ul class="page-anchor-list">
-        <li class="page-anchor page-anchor-1"><a href="#page-anchor-1">第壹页</a></li>
-        <li class="page-anchor page-anchor-2"><a href="#page-anchor-2">第贰页</a></li>
-        <li class="page-anchor page-anchor-3"><a href="#page-anchor-3">第肆页</a></li>
-        <li class="page-anchor page-anchor-4"><a href="#page-anchor-4">第伍页</a></li>
+
+    <ul id="J_Menu" class="page-anchor-list">
+        <li class="page-anchor page-anchor-1" data-menuanchor="page-anchor-1"><a href="#page-anchor-1">第壹页</a></li>
+        <li class="page-anchor page-anchor-2" data-menuanchor="page-anchor-2"><a href="#page-anchor-2">第贰页</a></li>
+        <li class="page-anchor page-anchor-3" data-menuanchor="page-anchor-3"><a href="#page-anchor-3">第叁页</a></li>
+        <li class="page-anchor page-anchor-4" data-menuanchor="page-anchor-4"><a href="#page-anchor-4">第肆页</a></li>
     </ul>
     <a class="back-to-top" href="#page-anchor-0"></a>
 </div>
 
-
+<script src="//cdn.bootcss.com/jquery/1.7.2/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/seajs/3.0.0/sea.js"></script>
 
 <!--[if gte IE 9]>
 <script src="assets/js/lib/plax.js"></script>
@@ -78,14 +81,13 @@
 <script src="assets/js/lib/jquery.hashchange.js"></script>
 <script src="assets/js/lib/jquery.fullpage.min.js"></script>
 <script src="assets/js/lib/jquery.sidebar.js"></script>
-<script src="assets/js/lib/sliderGradual.js"></script>
 <!-- endbuild -->
 
 <script>
     seajs.config({
-        base:'./assets/js/app/',
+        base: './assets/js/app/',
         'map': [
-            [ /^(.*\.(?:css|js))(.*)$/i, '$1?20171031' ]
+            [/^(.*\.(?:css|js))(.*)$/i, '$1?20171031']
         ]
     });
 

@@ -4,9 +4,9 @@
  */
 
 define(function (require, exports, module) {
-    function init () {
+    function init() {
         $('#J_FullPage').fullpage({
-            menu: '#J_NavSidebar',
+            menu: '#J_Menu',
 
             // 导航条
             anchors: ['page-anchor-0', 'page-anchor-1', 'page-anchor-2', 'page-anchor-3', 'page-anchor-4'], // 锚点链接
@@ -15,18 +15,16 @@ define(function (require, exports, module) {
 
             lazyLoading: true,
 
+            recordHistory: false,
+
+            scrollOverflow: true,
+
+
             afterLoad: function (anchorLink, index) {
 
             },
             onLeave: function (index, nextIndex, direction) {
-                index--;
-                nextIndex--;
 
-                $('.page-' + index).removeClass('active');
-                $('.page-anchor-' + index).removeClass('active');
-
-                $('.page-' + nextIndex).addClass('active');
-                $('.page-anchor-' + nextIndex).addClass('active');
             }
         });
     }

@@ -9,5 +9,13 @@ body {
 
     overflow: hidden;
 
-    @include v-h-center(990px, 580px);
+    @include v-h-center($CONTENT_SAFE_WIDTH, $CONTENT_SAFE_HEIGHT);
+
+    text-align: center;
+    line-height: 580px;
+    font-size: 72px;
+    text-transform: uppercase;
+    color: rgba(#000, .7);
+    background-color: #fff;
+    opacity: .3;
 }

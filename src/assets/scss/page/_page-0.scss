@@ -1,61 +1,67 @@
 @charset "UTF-8";
 
 .page-0 {
-    .keyart, .keyart_layer {
+    .plax-layer-wrapper,
+    .plax-layer {
         height: 100%;
     }
 
-    .keyart_layer {
-        position: absolute;
-        background-size: auto 600px;
-    }
-
-    #keyart-0 {
-        background-image: url('../img/0/parallax0.png');
-        background-color: #ffaf1b;
-    }
-    #keyart-1 {
-        background-image: url('../img/0/parallax1.png');
-    }
-    #keyart-2 {
-        background-image: url('../img/0/parallax2.png');
-    }
-    #keyart-3 {
-        background-image: url('../img/0/parallax3.png');
-    }
-    #keyart-4 {
-        background-image: url('../img/0/parallax4.png');
-    }
-    #keyart-5 {
-        background-image: url('../img/0/parallax5.png');
-    }
-    #keyart-6 {
-        background-image: url('../img/0/parallax6.png');
-    }
-    #keyart-7 {
-        background-image: url('../img/0/parallax7.png');
-    }
-    #keyart-8 {
-        background-image: url('../img/0/parallax8.png');
-    }
-    #keyart-scrim {
-        background-color: #ffaf00;
-        opacity: 0;
-    }
-
-    .keyart {
+    .plax-layer-wrapper {
+        overflow: hidden;
         position: relative;
         z-index: 10;
     }
 
-    .keyart_layer {
+    .plax-layer {
         background-position: bottom center;
         background-size: auto 1038px;
         background-repeat: repeat-x;
         width: 100%;
         position: absolute;
     }
-    .keyart_layer.parallax {
-        position: fixed;
+
+    .plax-layer {
+        position: absolute;
+        background-size: auto 600px;
+    }
+
+    .plax-layer-0 {
+        background-image: url('../img/0/parallax0.png');
+        background-color: #ffaf1b;
+    }
+    .plax-layer-1 {
+        background-image: url('../img/0/parallax1.png');
+    }
+    .plax-layer-2 {
+        background-image: url('../img/0/parallax2.png');
+    }
+    .plax-layer-3 {
+        background-image: url('../img/0/parallax3.png');
+    }
+    .plax-layer-4 {
+        background-image: url('../img/0/parallax4.png');
+    }
+    .plax-layer-5 {
+        background-image: url('../img/0/parallax5.png');
+    }
+    .plax-layer-6 {
+        background-image: url('../img/0/parallax6.png');
+    }
+    .plax-layer-7 {
+        background-image: url('../img/0/parallax7.png');
+    }
+    .plax-layer-8 {
+        background-image: url('../img/0/parallax8.png');
+    }
+
+    .plax-layer-top-scrim {
+        top: -10px;
+        height: 30px;
+        background-color: #ffaf00;
+    }
+    .plax-layer-bottom-scrim {
+        bottom: -990px;
+        height: 1000px;
+        background-color: #210002;
     }
 }

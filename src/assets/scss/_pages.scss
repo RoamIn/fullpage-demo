@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 @import "page/page-0";
 @import "page/page-1";
 @import "page/page-2";
@@ -11,22 +13,24 @@
     background-position: center;
     background-repeat: no-repeat;
 
+    // 滚动到该屏的时候
     &.active {
 
     }
 }
 
 
-@for $i from 0 to 5 {
+// 1、2、3、4 屏
+@for $i from 1 to 5 {
     .page-#{ $i } {
-        background-image: url("../img/page-#{ $i }.jpg");
-        _background-image: url("../img/ie/page-#{ $i }.jpg");
-        *background-image: url("../img/ie/page-#{ $i }.jpg");
+        // 占位颜色
+        background-color: nth($PAGE_BG_COLOR, $i);
 
-        @if($i > 0) {
-            .page-catalog {
-                background-position: 0 -60px * ($i - 1);
-            }
+        &.loaded {
+            background-image: url("../img/page-#{ $i }.jpg");
+
+            // IE6 背景特殊处理，使用不透明的背景
+            _background-image: url("../img/ie/page-#{ $i }.jpg");
         }
     }
 }

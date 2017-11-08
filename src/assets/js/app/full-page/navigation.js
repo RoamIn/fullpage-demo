@@ -7,8 +7,8 @@ define(function (require, exports, module) {
     function initSlider () {
 		var navigation = new Sidebar({
 			wrapper: '#J_Navigation', // 必填,选择器
-			width: 210,
-			height: 472,
+			width: 191,
+			height: 442,
 
 			// 设置内容宽度，决定浮窗显示的位置，
 			// 默认为0，则直接靠左或者靠右
@@ -17,7 +17,7 @@ define(function (require, exports, module) {
 
 			// 距离左边或者右边边缘的距离(数值)
 			// 带票position的第一个参数"left"或者"right"使用
-			lrDistance: 0,
+			lrDistance: 10,
 			// 距离上边或者下边边缘的距离(数值)
 			// 搭配position的第二个参数为"top"或者"bottom"使用
 
